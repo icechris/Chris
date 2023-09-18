@@ -1,0 +1,141 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Other Projects</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css">
+   <!--=============== REMIXICONS ===============-->
+   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+
+  <!-- styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+
+    }
+
+    body {
+      background: #eee;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      padding-top: 10rem;
+      padding-bottom: 19rem;
+    }
+
+    .swiper-slide {
+      background-position: center;
+      background-size: cover;
+      width: 300px;
+      height: 300px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+    }
+    .home:hover{
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Swiper -->
+ 
+   <a target="_blank" href="/index.html">
+    <h1 class="home" style="margin: 1rem;">Back to Main page</h1>
+  </a>
+ 
+  <div class="swiper mySwiper">
+   
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="/assets/img/3an.jpg" />
+        <div>
+          
+          <h1 class="projects__tittle">Flyer</h1>
+      </div>
+    
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/img/emes.jpg" />
+        <div>
+          <h1 class="projects__tittle">Flyer</h1>
+      </div>
+    
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/img/three logo.jpg" />
+        <div>
+          <h1 class="projects__tittle">Logo</h1>
+      </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/img/give.png" />
+        <div>
+          <h1 class="projects__tittle">Thumbnail</h1>
+      </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/img/never give.png" />
+        <div>
+          <h1 class="projects__tittle">Thumbnail</h1>
+      </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/img/wire.jpg" />
+        <div>
+          <h1 class="projects__tittle">Flyer</h1>
+      </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="/assets/img//shai.jpg" />
+        <div>
+          <h1 class="projects__tittle">Flyer</h1>
+      </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+</body>
+
+</html>
